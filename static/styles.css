@@ -7,11 +7,11 @@ a:hover{	text-decoration: underline;  color: White;   }
 form{	margin:0;}
 
 #header{	width:760px; margin-left:auto; margin-right:auto;}
-#header ul{ margin: 0; padding-left: 0; height: 44px; line-height: 44px; display: block; list-style: none; background-color: #4D4D4D; background-image: url(bg_topnav.gif); background-repeat: no-repeat;  }
+#header ul{ margin: 0; padding-left: 0; height: 44px; line-height: 44px; display: block; list-style: none; background-color: #4D4D4D; background-image: url(); background-repeat: no-repeat;  }
 #header li{ display: inline; background-color: #222222;  float: right;  }
 #header li a{ height: 44px; line-height: 44px; display: block; padding-left: 27px; padding-right: 27px; border-left: 1px solid Black;  float: left;     }
 #header li a:hover{ background-color: #444444; text-decoration: none;}
-#header .Visual{ height:130px; background-image: url(bg_visual.jpg);  background-repeat: no-repeat;  background-color: #4492C8;  border-top: 3px solid Black;   }
+#header .Visual{ height:130px; background-image: url(images/bg_visual.jpg);  background-repeat: no-repeat;  background-color: #4492C8;  border-top: 3px solid Black;   }
 h1{ margin: 0; padding: 40px 0 0 0; font-family: "trebuchet ms",arial,tahoma,verdana,sans-serif; font-weight: normal; letter-spacing: .005em; color: White;  font-size: 20pt;  }
 
 #CONTENT{ width:760px; margin-left:auto; margin-right:auto;   }

@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Más que libros</title>
+<link rel="icon" type="image/x-icon" href="/static/images/indexfav.png"/>
+<meta name="description" content="Aplicación dinámica en python flask que nos va a permitir mostrar información de libros." />
+<meta name="keywords" content="Free CSS Templates, CSS Website Templates, Templates, Free Templates, CSS" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../static/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="header">
+  <h1>Más que libros</h1>
+  <ul>
+    <li><a href="contacto">Contacto</a></li>
+    <li><a href="categorias">Categorías</a></li>
+    <li><a href="biblioteca">Biblioteca</a></li>
+  </ul>
+  <div class="Visual"> </div>
+</div>
+<div id="CONTENT">
+  <h2>{%block titulo%}{%endblock%}</h2>
+  <h3>{%block subtitulo%}{%endblock%}</h3>
+  <div id="TEXT">
+    <p>{%block contenido%}{%endblock%}</p>
+  </div>
+</div>
+<div id="FOOTER">
+  <p>Belén Nazareth &copy; 2022 </p>
+  <p><a href="https://github.com/belennazareth">Designed by belennazareth </a></p>
+  <p><a href="http://www.gettemplate.com">ft. GetTemplate.com</a></p>
+</div>
+</body>
+</html>
+
