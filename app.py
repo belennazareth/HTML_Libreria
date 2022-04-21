@@ -6,20 +6,20 @@ def inicio():
     return render_template("biblioteca.html")
 
 @app.route('/biblioteca')
-def articulos():
+def biblioteca():
     return render_template("biblioteca.html")
 
-@app.route('/acercade')
-def acercade():
-    return render_template("acercade.html")
+@app.route('/categorias')
+def categorias():
+    return render_template("categorias.html")
 
 @app.route('/error')
 def error():
     return abort(404)
 
-@app.route('/redireccion')
-def redireccion():
-    return redirect("/articulos")
+@app.route('/contacto')
+def contacto():
+    return redirect("/contacto")
 
 
 app.run("0.0.0.0",5000,debug=True)
