@@ -1,0 +1,24 @@
+{%extends "base.html" %}
+
+{%block titulo%}- Contacta con nosotros -{%endblock%}
+
+{%block subtitulo%}{%endblock%}
+
+{%block contenido%}
+
+<form action="http://www2.gonzalonazareno.org/josedom/resultado.php" method="post">
+  
+  <ul>
+    <li>
+      <label for="email"> Email: </label>
+      <input type="email" name="correo"/>
+    </li>
+    <li>
+      <label for="coment"> Comentario: </label>
+      <textarea name="comentarios"></textarea>
+    </li>
+  </ul>
+  <input type="submit" value="Enviar"/>
+</form>
+
+{%endblock%}

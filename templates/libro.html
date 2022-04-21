@@ -1,0 +1,28 @@
+{%extends "base.html" %}
+
+{%block titulo%}- Biblioteca -{%endblock%}
+
+{%block subtitulo%}Belén Nazareth Durán Meléndez{%endblock%}
+
+{%block contenido%}
+
+{%for book in books -%}
+    
+    {%if book.isbn == isbn -%}
+        
+        {%if book.status == "MEAP" -%}
+            <p>ESTE LIBRO NO SE HA PUBLICADO</p>
+        {%endif-%}
+        
+        <li>{{book.title}}</li>
+        <li><img src="{{book.thumbnailUrl}}"></img></li>
+        <li>{{book.pageCount}}</li>
+        <li>{{book.shortDescription}}</li>
+        <!-- tengo que hacer for -->
+        <li>{{book.authors}}</li> 
+        <li>{{book.categories}}</li>
+        
+    {%endif-%}
+{% endfor -%}
+
+{%endblock%}

@@ -1,25 +1,36 @@
 from flask import Flask, render_template, abort, redirect
-app = Flask(__name__)	
+
+from functions import checkLibrary
+app = Flask(__name__)
+
+books = checkLibrary()	
 
 @app.route('/')
 def inicio():
-    return render_template("biblioteca.html")
+    return render_template("biblioteca.html",books=books)
 
 @app.route('/biblioteca')
 def biblioteca():
-    return render_template("biblioteca.html")
-
-@app.route('/categorias')
-def categorias():
-    return render_template("categorias.html")
+    return render_template("biblioteca.html", books=books)
 
 @app.route('/error')
 def error():
     return abort(404)
 
+@app.route('/libro/<isbn>')
+def libro(isbn):
+    try:
+        return render_template("libro.html",isbn=isbn,books=books)
+    except:
+        error()
+
+@app.route('/categoria/<categoria>')
+def categoria(categoria):
+    return render_template("categorias.html")
+
 @app.route('/contacto')
 def contacto():
-    return redirect("/contacto")
+    return render_template("contacto.html")
 
 
 app.run("0.0.0.0",5000,debug=True)

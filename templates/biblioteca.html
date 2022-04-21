@@ -4,4 +4,10 @@
 
 {%block subtitulo%}Belén Nazareth Durán Meléndez{%endblock%}
 
-{%block contenido%}{%endblock%}
+{%block contenido%}
+
+{%for book in books -%}
+    <li><a href="/libro/{{book.isbn}}"> {{book.title}}</a></li>
+{% endfor -%}
+
+{%endblock%}
