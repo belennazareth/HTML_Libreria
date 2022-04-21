@@ -26,7 +26,7 @@ def libro(isbn):
 
 @app.route('/categoria/<categoria>')
 def categoria(categoria):
-    return render_template("categorias.html")
+    return render_template("categoria.html", categoria=categoria, books=books)
 
 @app.route('/contacto')
 def contacto():

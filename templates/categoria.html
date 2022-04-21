@@ -1,7 +1,17 @@
 {%extends "base.html" %}
 
-{%block titulo%}- Categorias -{%endblock%}
+{%block titulo%}- {{categoria}} -{%endblock%}
 
-{%block subtitulo%}{%endblock%}
+{%block subtitulo%}Belén Nazareth Durán Meléndez{%endblock%}
 
-{%block contenido%}{%endblock%}
+{%block contenido%}
+
+{%for book in books -%}
+    {% for category in book.categories -%}
+        {%if category == categoria -%}
+            <li>{{book.title}}</li>
+        {% endif -%}
+    {% endfor -%}
+{% endfor -%}
+
+{%endblock%}

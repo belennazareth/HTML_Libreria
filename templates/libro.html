@@ -1,6 +1,6 @@
 {%extends "base.html" %}
 
-{%block titulo%}- Biblioteca -{%endblock%}
+{%block titulo%}- Libro -{%endblock%}
 
 {%block subtitulo%}Belén Nazareth Durán Meléndez{%endblock%}
 
@@ -19,8 +19,12 @@
         <li>{{book.pageCount}}</li>
         <li>{{book.shortDescription}}</li>
         <!-- tengo que hacer for -->
-        <li>{{book.authors}}</li> 
-        <li>{{book.categories}}</li>
+        {%for author in book.authors-%}
+            <li>{{author}}</li>
+        {%endfor-%} 
+        {%for category in book.categories -%} 
+            <li><a href="/categoria/{{category}}">{{category}}</a></li>
+        {%endfor-%}
         
     {%endif-%}
 {% endfor -%}
