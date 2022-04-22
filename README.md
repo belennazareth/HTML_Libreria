@@ -23,4 +23,13 @@ A partir de esta plantilla se creará una plantilla base.html.
 
         `{%block xxxxxx%}{%endblock%}`
 
-8. Se ha creado un fichero html para el inicio, llamado [biblioteca](https://github.com/belennazareth/HTML_Program_Libreria/blob/main/templates/biblioteca.html), donde se muestran los títulos de los libros como enlace:
+8. Se ha creado un fichero html para el inicio, llamado [biblioteca](https://github.com/belennazareth/HTML_Program_Libreria/blob/main/templates/biblioteca.html), donde se muestran los títulos de los libros como enlace.
+
+9. Al entrar en uno de los títulos de la página principal se abrirá una página con los datos sobre ese libro, para esto se ha hecho un fichero [libro.html](https://github.com/belennazareth/HTML_Program_Libreria/blob/main/templates/libro.html) donde se ha realizado todo el código necesario.
+
+10. En caso de que el ISBN no exista devolverá un error 404, el cual esta añadido en el [app.py](https://github.com/belennazareth/HTML_Program_Libreria/blob/main/app.py) como un except.
+
+11. En caso de que el campo status sea MEAP devolverá un mensaje donde se indique que el libro aún no se ha publicado.
+
+12. En los detalles del libro aparecen las categorías como enlaces donde se mostrarán en una página ['categoría'](https://github.com/belennazareth/HTML_Program_Libreria/blob/main/templates/categoria.html) los libros que pertenezcan a la misma con el título de esta.
+
