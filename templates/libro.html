@@ -2,7 +2,7 @@
 
 {%block titulo%}- Libro -{%endblock%}
 
-{%block subtitulo%}Belén Nazareth Durán Meléndez{%endblock%}
+{%block subtitulo%}{%endblock%}
 
 {%block contenido%}
 
@@ -14,16 +14,24 @@
             <p>ESTE LIBRO NO SE HA PUBLICADO</p>
         {%endif-%}
         
-        <li>{{book.title}}</li>
-        <li><img src="{{book.thumbnailUrl}}"></img></li>
-        <li>{{book.pageCount}}</li>
-        <li>{{book.shortDescription}}</li>
-        <!-- tengo que hacer for -->
+        <h4>{{book.title}}</h4>
+        
+        <p><img src="{{book.thumbnailUrl}}"></img></p>
+        
+        <li>Páginas: {{book.pageCount}}</li>
+        
+        <li>Descripción corta: {{book.shortDescription}}</li>
+        
+        <li>Autor/es: </li>
+        
         {%for author in book.authors-%}
-            <li>{{author}}</li>
+            <ul><li>{{author}}</li></ul>
         {%endfor-%} 
+        
+        <li>Categorías: </li>
+
         {%for category in book.categories -%} 
-            <li><a href="/categoria/{{category}}">{{category}}</a></li>
+            <ul><li><a href="/categoria/{{category}}">{{category}}</a></li></ul>
         {%endfor-%}
         
     {%endif-%}
