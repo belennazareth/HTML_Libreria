@@ -22,7 +22,7 @@ def libro(isbn):
     try:
         return render_template("libro.html",isbn=isbn,books=books)
     except:
-        error()
+        return abort(404)
 
 @app.route('/categoria/<categoria>')
 def categoria(categoria):
