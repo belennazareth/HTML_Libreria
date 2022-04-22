@@ -1,6 +1,6 @@
 # HTML_Program_Libreria
 
-![Portada](./static/images/bg_visual.jpg)
+![Portada](./screenshots/Fondo.jpg)
 
 Creación de aplicación dinámica en python flask donde se trabajara con una [plantilla](https://plantillashtmlgratis.com/categoria-plantillas/plantillas-html/page/115/) de html5 gratuita.
 
