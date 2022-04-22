@@ -34,7 +34,8 @@
         {%for category in book.categories -%} 
             <ul><li><a href="/categoria/{{category}}">{{category}}</a></li></ul>
         {%endfor-%}
-    
+        
+    {%endif-%}
 {% endfor -%}
 
 {%endblock%}
