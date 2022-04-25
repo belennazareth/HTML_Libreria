@@ -1,6 +1,6 @@
 # HTML_Program_Libreria
 
-![Portada](./screenshots/Fondo.jpg)
+![Portada](./screenshots/Fondo-removebg-preview.png)
 
 Creación de aplicación dinámica en python flask donde se trabajara con una [plantilla](https://plantillashtmlgratis.com/categoria-plantillas/plantillas-html/page/115/) de html5 gratuita.
 
@@ -51,3 +51,14 @@ A partir de esta plantilla se creará una plantilla base.html.
 
 ![Enlace](./screenshots/enlace.png)
 ![categoría](./screenshots/categoria.png)
+
+
+## Acceso a la página
+
+
+Para poder aceder a esta página podemos hacerlo a través de este [enlace](https://html-flask-libreria.herokuapp.com/).
+Se ha usado HEROKU, una plataforma de servicios en la nube que nos va a permitir manejar servidores y configurarlos.
+
+Debido al corte por parte de HEROKU hacia el uso directo de repositorios de GITHUB he usado esta [guía](https://www.josedomingo.org/pledin/2022/04/heroku-cli/) de despliegue en Heroku usando su CLI 
+
+![Fav](./screenshots/indexfav.png)
