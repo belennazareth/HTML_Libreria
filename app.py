@@ -1,4 +1,5 @@
 from flask import Flask, render_template, abort, redirect
+import os
 
 from functions import checkLibrary
 app = Flask(__name__)
@@ -33,4 +34,6 @@ def contacto():
     return render_template("contacto.html")
 
 
-app.run("0.0.0.0",5000,debug=True)
+#app.run("0.0.0.0",5000,debug=True)
+port=os.environ["PORT"]
+app.run('0.0.0.0',int(port), debug=True)
